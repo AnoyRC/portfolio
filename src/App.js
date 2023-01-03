@@ -1,22 +1,59 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import './App.css';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 function App() {
-  const boxRef = useRef();
+  
 
   useLayoutEffect(() => {
-  // Refs allow you to access DOM nodes
-    console.log(boxRef) // { current: div.box }
-  // then we can animate them like so...
-    gsap.to(boxRef.current, {
-      rotation: "+=360"
-    });
+    gsap.registerPlugin(ScrollTrigger)
+    
+    gsap.to('.gallery',{
+      scale:3.333,
+      ScrollTrigger:{
+        trigger:'.gallery-container',
+        markers:true,
+        scrub:true,
+        end: () => window.innerHeight,
+        ease:'none'
+      }
+    })
+      
+      
   });
   return (
-    <div className="App">
-      <div className="box" ref={boxRef}>Hello</div>
+    <div className="gallery-container">
+    <div className="gallery">
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
+      <div className="gallery-layer center-layer">
+        <div className="galleryBlock centerBlock"></div>
+      </div>
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
+      <div className="gallery-layer">
+        <div className="galleryBlock"></div>
+      </div>
     </div>
+  </div>
   );
 }
 
