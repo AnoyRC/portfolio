@@ -7,13 +7,17 @@ body {
   overflow-x: hidden;
 }
 
+#my-scrollbar {
+  overflow-x: hidden;
+}
+
 .galleryBlock {
   opacity: 1;
 }
 
 .gallery-container {
   width: 100vw;
-  height: 400vh;
+  height: 100vh;
   position: relative;
 }
 
