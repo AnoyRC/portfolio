@@ -9,6 +9,8 @@ function App() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
+    //var timeScaleClamp = gsap.utils.clamp(4, 6);
+
    
     const bodyScrollBar = Scrollbar.init(document.body, {
       damping: 0.1,
@@ -50,12 +52,31 @@ function App() {
         anticipatePin: 1,
       }
     })
-    
-      
+
+    gsap.set('.skill-reel',{
+      x:"20%"
+    })
+
+    var reel = gsap.timeline().to('.skill-reel',{
+      x:"-100%",
+      duration:70,
+      ease:'none',
+      repeat:-1,
+    })
+
+    var timeScaleClamp = gsap.utils.clamp(1, 6);
+
+    ScrollTrigger.create({
+      start:0,
+      onUpdate:(self) => {
+        reel.timeScale(timeScaleClamp(Math.abs(self.getVelocity() / 200)))
+        console.log()
+      }
+    })
       
   });
   return (
-    <div>
+    <div className='contents'>
     <div className="gallery-container">
     <div className="gallery">
       <div className="gallery-layer">
@@ -86,10 +107,23 @@ function App() {
         <div className="galleryBlock"></div>
       </div>
     </div>
-    <div className='end'></div>
+  </div>
+  <div className='skill-container'>
+    <div className='skill-reel'>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> - My Skills </div>
+    </div>
   </div>
   </div>
   );
 }
+
 
 export default App;

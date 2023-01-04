@@ -7,8 +7,10 @@ body {
   overflow-x: hidden;
 }
 
-#my-scrollbar {
-  overflow-x: hidden;
+.contents{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .galleryBlock {
@@ -17,7 +19,7 @@ body {
 
 .gallery-container {
   width: 100vw;
-  height: 100vh;
+  height: 190vh;
   position: relative;
 }
 
@@ -116,4 +118,20 @@ body {
 .galleryBlock {
   display: block;
   position: absolute;
+}
+
+.skill-reel{
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: fit-content;
+  will-change: transform;
+}
+
+.reel-item{
+  margin-left: 55px;
+  font-weight: 400;
+  font-size: 180px;
+  text-transform: uppercase;
 }
