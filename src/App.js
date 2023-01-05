@@ -71,81 +71,56 @@ function App() {
       }
     })
 
-    console.log(window.screenY)
-
-    gsap.set('.skill-layer:nth-child(1) .skillBlock',{
-      x:"75vw",
-    })
-    gsap.set('.skill-layer:nth-child(2) .skillBlock',{
-      x:"55.99vw",
-    })
-    gsap.set('.skill-layer:nth-child(3) .skillBlock',{
-      x:"36.98vw",
-    })
-    gsap.set('.skill-layer:nth-child(4) .skillBlock',{
-      x:"75vw",
-    })
-    gsap.set('.skill-layer:nth-child(5) .skillBlock',{
-      x:"55.99vw",
-    })
-    gsap.set('.skill-layer:nth-child(6) .skillBlock',{
-      x:"36.98vw",
-    })
-    gsap.set('.skill-layer:nth-child(7) .skillBlock',{
-      x:"75vw",
-    })
-    gsap.set('.skill-layer:nth-child(8) .skillBlock',{
-      x:"55.99vw",
-    })
-    gsap.set('.skill-layer:nth-child(9) .skillBlock',{
-      x:"36.98vw",
-    })
-
-    var skillAnimation = gsap.timeline({
-      scrollTrigger:{
-        trigger:'.skillBlock',
-        start:window.innerHeight* 2,
-        end:()=> window.innerHeight* 2.8,
-        scrub:true,
-        markers:true,
-      }
-    })
+   let skillAnimation = gsap.timeline({
+    scrollTrigger:{
+      trigger:'.skillBlock',
+      end:window.innerHeight*2.8,
+      start:window.innerHeight*2.1,
+      markers:true,
+      scrub:true,
+    }})
 
     skillAnimation
     .to('.skill-layer:nth-child(1) .skillBlock',{
-      x:'0%',
-      ease:'none'
+      x:'-70vw',
+      y:'-45vh',
+      ease:'easeOut'
     })
     .to('.skill-layer:nth-child(2) .skillBlock',{
-      x:'0%',
-      ease:'none'
+      x:'-50vw',
+      y:'-45vh',
+       ease:'none'
     })
     .to('.skill-layer:nth-child(3) .skillBlock',{
-      x:'0%',
+      x:'-30vw',
+      y:'-45vh',
       ease:'none'
     })
     .to('.skill-layer:nth-child(4) .skillBlock',{
-      x:'0%',
+      x:'-70vw',
       ease:'none'
     })
     .to('.skill-layer:nth-child(5) .skillBlock',{
-      x:'0%',
+      x:'-50vw',
       ease:'none'
     })
     .to('.skill-layer:nth-child(6) .skillBlock',{
-      x:'0%',
+      x:'-30vw',
       ease:'none'
     })
     .to('.skill-layer:nth-child(7) .skillBlock',{
-      x:'0%',
+      x:'-70vw',
+      y:'45vh',
       ease:'none'
     })
     .to('.skill-layer:nth-child(8) .skillBlock',{
-      x:'0%',
+      x:'-50vw',
+      y:'45vh',
       ease:'none'
     })
     .to('.skill-layer:nth-child(9) .skillBlock',{
-      x:'0%',
+      x:'-30vw',
+      y:'45vh',
       ease:'none'
     })
       
