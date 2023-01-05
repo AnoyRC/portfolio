@@ -76,7 +76,6 @@ function App() {
       trigger:'.skillBlock',
       end:window.innerHeight*2.8,
       start:window.innerHeight*2.1,
-      markers:true,
       scrub:true,
     }})
 
@@ -122,6 +121,18 @@ function App() {
       x:'-30vw',
       y:'45vh',
       ease:'none'
+    })
+
+    gsap.to(".text p",{
+      backgroundPositionX:'0%',
+      stagger:1,
+      scrollTrigger:{
+        trigger:".text p",
+        scrub:1,
+        markers:true,
+        start:"top 65%",
+        end:"bottom 20%"
+      }
     })
       
   });
@@ -198,6 +209,13 @@ function App() {
     </div>
     <div className="skill-layer">
         <div className="skillBlock"></div>
+    </div>
+  </div>
+  <div className='project-greeting'>
+    <div className='text'>
+      <p>A creative</p>
+      <p>project is a</p>
+      <p>moving target!</p>
     </div>
   </div>
   </div>

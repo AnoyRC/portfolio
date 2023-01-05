@@ -209,3 +209,24 @@ body {
   top: 22vw;
   left: 75vw;
 }
+
+.project-greeting{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200vh;
+  width:100%;
+}
+
+.project-greeting .text{
+  font-size: 200px;
+}
+
+.text > p {
+  background:linear-gradient(to right, rgb(37,37,37) 50%, rgb(255,255,255) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  margin-left:5vw;
+}
