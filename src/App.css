@@ -135,3 +135,77 @@ body {
   font-size: 180px;
   text-transform: uppercase;
 }
+
+.skill-container {
+  margin-top: 70px;
+  width: 100vw;
+  height: 135vh;
+  position: relative;
+}
+
+.skillBlock {
+  background-size: cover;
+  background-color: darkgray;
+  height: 40vh;
+  width: 17vw;
+  border-radius: 1.5rem;
+}
+
+.skill-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.skillBlock {
+  display: block;
+  position: relative;
+}
+
+
+.skill-layer:nth-child(1) .skillBlock {
+  top: 0vw;
+  left: 2vw;
+}
+
+.skill-layer:nth-child(2) .skillBlock {
+  top: 0vw;
+  left: 21vw;
+}
+
+.skill-layer:nth-child(3) .skillBlock {
+  top: 0vw;
+  left: 40vw;
+}
+
+.skill-layer:nth-child(4) .skillBlock {
+  top: 22vw;
+  left: 2vw;
+}
+
+.skill-layer:nth-child(5) .skillBlock {
+  top: 22vw;
+  left: 21vw;
+}
+
+.skill-layer:nth-child(6) .skillBlock {
+  top: 22vw;
+  left: 40vw;
+}
+
+.skill-layer:nth-child(7) .skillBlock {
+  top: 44vw;
+  left: 2vw;
+}
+
+.skill-layer:nth-child(8) .skillBlock {
+  top: 44vw;
+  left: 21vw;
+}
+
+.skill-layer:nth-child(9) .skillBlock {
+  top: 44vw;
+  left: 40vw;
+}

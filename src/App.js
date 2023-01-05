@@ -44,9 +44,7 @@ function App() {
       ease:'none',
       scrollTrigger:{
         trigger: ".gallery",
-        markers:true,
         scrub:true,
-        pin:'gallery',
         start:'top top',
         end:()=> window.innerHeight,
         anticipatePin: 1,
@@ -70,8 +68,85 @@ function App() {
       start:0,
       onUpdate:(self) => {
         reel.timeScale(timeScaleClamp(Math.abs(self.getVelocity() / 200)))
-        console.log()
       }
+    })
+
+    console.log(window.screenY)
+
+    gsap.set('.skill-layer:nth-child(1) .skillBlock',{
+      x:"75vw",
+    })
+    gsap.set('.skill-layer:nth-child(2) .skillBlock',{
+      x:"55.99vw",
+    })
+    gsap.set('.skill-layer:nth-child(3) .skillBlock',{
+      x:"36.98vw",
+    })
+    gsap.set('.skill-layer:nth-child(4) .skillBlock',{
+      x:"75vw",
+    })
+    gsap.set('.skill-layer:nth-child(5) .skillBlock',{
+      x:"55.99vw",
+    })
+    gsap.set('.skill-layer:nth-child(6) .skillBlock',{
+      x:"36.98vw",
+    })
+    gsap.set('.skill-layer:nth-child(7) .skillBlock',{
+      x:"75vw",
+    })
+    gsap.set('.skill-layer:nth-child(8) .skillBlock',{
+      x:"55.99vw",
+    })
+    gsap.set('.skill-layer:nth-child(9) .skillBlock',{
+      x:"36.98vw",
+    })
+
+    var skillAnimation = gsap.timeline({
+      scrollTrigger:{
+        trigger:'.skillBlock',
+        start:window.innerHeight* 2,
+        end:()=> window.innerHeight* 2.8,
+        scrub:true,
+        markers:true,
+      }
+    })
+
+    skillAnimation
+    .to('.skill-layer:nth-child(1) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(2) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(3) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(4) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(5) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(6) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(7) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(8) .skillBlock',{
+      x:'0%',
+      ease:'none'
+    })
+    .to('.skill-layer:nth-child(9) .skillBlock',{
+      x:'0%',
+      ease:'none'
     })
       
   });
@@ -108,7 +183,7 @@ function App() {
       </div>
     </div>
   </div>
-  <div className='skill-container'>
+  <div className='reel-container'>
     <div className='skill-reel'>
       <div className='reel-item'> - My Skills </div>
       <div className='reel-item'> - My Skills </div>
@@ -119,6 +194,35 @@ function App() {
       <div className='reel-item'> - My Skills </div>
       <div className='reel-item'> - My Skills </div>
       <div className='reel-item'> - My Skills </div>
+    </div>
+  </div>
+  <div className='skill-container'>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
+    </div>
+    <div className="skill-layer">
+        <div className="skillBlock"></div>
     </div>
   </div>
   </div>
