@@ -129,13 +129,25 @@ function App() {
       scrollTrigger:{
         trigger:".text p",
         scrub:1,
-        markers:true,
         start:"top 65%",
         end:"bottom 20%"
       }
     })
-      
-  });
+
+    
+    gsap.timeline({
+    scrollTrigger: {
+      trigger: '.project-container',
+      scrub: true
+    }
+    })
+    .to('.projectBlock', {
+    stagger: .2,
+    y: "-100vh",
+    scrub:true      
+    });
+  })
+
   return (
     <div className='contents'>
     <div className="gallery-container">
@@ -216,6 +228,25 @@ function App() {
       <p>A creative</p>
       <p>project is a</p>
       <p>moving target!</p>
+    </div>
+  </div>
+  <div className='project-container'>
+    <div className='project-layer'>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+      <div className='projectBlock'></div>
+    </div>
+    <div className='line-layer'>
+      <div className='lineBlock'></div>
+    </div>
+    <div className='line-layer'>
+      <div className='lineBlock'></div>
     </div>
   </div>
   </div>

@@ -214,7 +214,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 200vh;
+  height: 90vh;
   width:100%;
 }
 
@@ -229,4 +229,59 @@ body {
   color: transparent;
   background-clip: text;
   margin-left:5vw;
+}
+
+.project-container {
+  margin-top: 70px;
+  width: 100vw;
+  height: 300vh;
+  position: relative;
+}
+
+.project-layer {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  top: 120vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.projectBlock {
+  background-size: cover;
+  background-color: darkgray;
+  height: 60vh;
+  width: 33vw;
+  border-radius: 0 1.5rem 1.5rem 1.5rem;
+  display: block;
+  position: relative;
+  margin-bottom: 1vh;
+}
+
+.line-layer{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lineBlock{
+  background-size: cover;
+  background-color: rgb(33, 33, 33);
+  height: 100%;
+  width: 2px;
+  display: block;
+  position: relative;
+}
+
+.line-layer:nth-child(2) .lineBlock {
+  top:0vh;
+  left:33.1vw;
+}
+
+.line-layer:nth-child(3) .lineBlock {
+  top:0vh;
+  left:66.45vw;
 }
