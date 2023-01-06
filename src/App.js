@@ -143,9 +143,70 @@ function App() {
     })
     .to('.projectBlock', {
     stagger: .2,
-    y: "-100vh",
-    scrub:true      
+    y: "-100vh",     
     });
+
+    gsap.timeline({
+      scrollTrigger:{
+        trigger:'.quote-container',
+        scrub:true,
+        start:window.innerHeight*7.1,
+        end:window.innerHeight*8.7
+      }
+    }).from('.quote-layer:nth-child(1) .quoteBlock',{
+      y:"-40vh",
+      x:"-100vw"
+    }).to('.quote-layer:nth-child(1) .quoteBlock',{
+      y:"40vh",
+      x:"100vw"
+    })
+
+    gsap.timeline({
+      scrollTrigger:{
+        trigger:'.quote-container',
+        scrub:true,
+        start:window.innerHeight*7.1,
+        end:window.innerHeight*8.7
+      }
+    }).from('.quote-layer:nth-child(2) .quoteBlock',{
+      y:"40vh",
+      x:"100vw"
+    }).to('.quote-layer:nth-child(2) .quoteBlock',{
+      y:"-40vh",
+      x:"-100vw"
+    })
+
+    gsap.timeline({
+      scrollTrigger:{
+        trigger:'.quote-container',
+        scrub:true,
+        start:window.innerHeight*7.1,
+        end:window.innerHeight*8.7
+      }
+    }).from('.quote-layer:nth-child(3) .quoteBlock',{
+      y:"40vh",
+      x:"-100vw"
+    }).to('.quote-layer:nth-child(3) .quoteBlock',{
+      y:"-40vh",
+      x:"100vw"
+    })
+
+    gsap.timeline({
+      scrollTrigger:{
+        trigger:'.quote-container',
+        scrub:true,
+        start:window.innerHeight*7.1,
+        end:window.innerHeight*8.7
+      }
+    }).from('.quote-layer:nth-child(4) .quoteBlock',{
+      y:"-40vh",
+      x:"100vw"
+    }).to('.quote-layer:nth-child(4) .quoteBlock',{
+      y:"40vh",
+      x:"-100vw"
+    })
+
+
   })
 
   return (
@@ -248,6 +309,36 @@ function App() {
     <div className='line-layer'>
       <div className='lineBlock'></div>
     </div>
+  </div>
+  <div className='quote-container'>
+    <div className='quote-layer'>
+      <div className='quoteBlock'>
+        <h1>Perfection is achieved</h1>
+      </div>
+    </div>
+    <div className='quote-layer'>
+      <div className='quoteBlock'>
+        <h1>not when there is</h1>
+      </div>
+    </div>
+    <div className='quote-layer'>
+      <div className='quoteBlock'>
+        <h1> nothing more to add,</h1>
+      </div>
+    </div>
+    <div className='quote-layer'>
+      <div className='quoteBlock'>
+        <h1> but when there is </h1>
+      </div>
+    </div>
+    <div className='quote-layer'>
+      <div className='quoteBlock'>
+        <h1>nothing left to take away.</h1>
+      </div>
+    </div>
+  </div>
+  <div className='about-container'>
+
   </div>
   </div>
   );

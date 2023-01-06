@@ -285,3 +285,64 @@ body {
   top:0vh;
   left:66.45vw;
 }
+
+.quote-container {
+  margin-top: 70px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.quote-layer{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.quoteBlock{
+  background-size: cover;
+  background-color: rgb(33, 33, 33);
+  height: 13vh;
+  width: 70vw;
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-layer:nth-child(1) .quoteBlock{
+  top:0vh;
+  left:15vw;
+}
+
+.quote-layer:nth-child(2) .quoteBlock{
+  top:20vh;
+  left:15vw;
+}
+.quote-layer:nth-child(3) .quoteBlock{
+  top:40vh;
+  left:15vw;
+}
+.quote-layer:nth-child(4) .quoteBlock{
+  top:60vh;
+  left:15vw;
+}
+.quote-layer:nth-child(5) .quoteBlock{
+  top:80vh;
+  left:15vw;
+}
+
+.quoteBlock > h1{
+  color:azure;
+  align-self: center;
+  font-size: 4vw;
+}
+
+.about-container {
+  margin-top: 70px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
