@@ -3,6 +3,14 @@ import { gsap } from 'gsap';
 import './App.css';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Scrollbar from 'smooth-scrollbar';
+import centerImage from './images/1.jpg'
+import image2 from './images/2.jpg'
+import image3 from './images/3.jpg'
+import image4 from './images/4.jpg'
+import image5 from './images/5.jpg'
+import image7 from './images/7.jpg'
+import image8 from './images/8.jpg'
+import image9 from './images/9.jpg'
 
 function App() {
   
@@ -41,6 +49,7 @@ function App() {
     gsap.to('.gallery-layer',{
       scale:0.9,
       y:'100vh',
+      x:'16vw',
       ease:'none',
       scrollTrigger:{
         trigger: ".gallery",
@@ -294,34 +303,53 @@ function App() {
 
   return (
     <div className='contents'>
+    <div class="noise"></div>
     <div className="gallery-container">
     <div className="gallery">
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="galleryBlock">
+        <img src={image2} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="galleryBlock">
+        <img src={image9} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="galleryBlock">
+        <img src={image4} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer center-layer">
-        <div className="galleryBlock centerBlock"></div>
+        <div className="galleryBlock centerBlock">
+          <img src={centerImage} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="galleryBlock">
+        <img src={image3} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="galleryBlock">
+        <img src={image5} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="galleryBlock">
+        <img src={image8} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="galleryBlock">
+        <img src={image7} alt='Welcome'/>
+        </div>
       </div>
       <div className="gallery-layer">
-        <div className="galleryBlock"></div>
+        <div className="textBlock">
+        <h1>Anoy Roy <br/>Chowdhury</h1>
+        </div>
       </div>
     </div>
   </div>
