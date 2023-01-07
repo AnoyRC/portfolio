@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'Gallient';
+  src: url('fonts/Gallient-Regular.woff2') format('woff2'),
+      url('fonts/Gallient-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Fog';
   src: url('fonts/FoglihtenNo07.woff2') format('woff2'),
       url('fonts/FoglihtenNo07.woff') format('woff');

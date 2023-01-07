@@ -389,15 +389,15 @@ function App() {
   </div>
   <div className='reel-container'>
     <div className='skill-reel'>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
-      <div className='reel-item'> - My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
+      <div className='reel-item'> ~ My Skills </div>
     </div>
   </div>
   <div className='skill-container'>
