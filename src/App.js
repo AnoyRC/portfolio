@@ -129,8 +129,8 @@ function App() {
       scrollTrigger:{
         trigger:".text p",
         scrub:1,
-        start:"top 65%",
-        end:"bottom 20%"
+        start:window.innerHeight*3.4,
+        end:window.innerHeight*4.2
       }
     })
 
@@ -150,14 +150,14 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*7.1,
-        end:window.innerHeight*8.7
+        start:window.innerHeight*6.4,
+        end:window.innerHeight*9.4
       }
     }).from('.quote-layer:nth-child(1) .quoteBlock',{
-      y:"-40vh",
+      y:"-50vh",
       x:"-100vw"
     }).to('.quote-layer:nth-child(1) .quoteBlock',{
-      y:"40vh",
+      y:"50vh",
       x:"100vw"
     })
 
@@ -165,14 +165,14 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*7.1,
-        end:window.innerHeight*8.7
+        start:window.innerHeight*6.4,
+        end:window.innerHeight*9.4
       }
     }).from('.quote-layer:nth-child(2) .quoteBlock',{
-      y:"40vh",
+      y:"50vh",
       x:"100vw"
     }).to('.quote-layer:nth-child(2) .quoteBlock',{
-      y:"-40vh",
+      y:"-50vh",
       x:"-100vw"
     })
 
@@ -180,14 +180,14 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*7.1,
-        end:window.innerHeight*8.7
+        start:window.innerHeight*6.4,
+        end:window.innerHeight*9.4
       }
     }).from('.quote-layer:nth-child(3) .quoteBlock',{
-      y:"40vh",
+      y:"50vh",
       x:"-100vw"
     }).to('.quote-layer:nth-child(3) .quoteBlock',{
-      y:"-40vh",
+      y:"-50vh",
       x:"100vw"
     })
 
@@ -195,18 +195,101 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*7.1,
-        end:window.innerHeight*8.7
+        start:window.innerHeight*6.4,
+        end:window.innerHeight*9.4
       }
     }).from('.quote-layer:nth-child(4) .quoteBlock',{
-      y:"-40vh",
+      y:"-50vh",
       x:"100vw"
     }).to('.quote-layer:nth-child(4) .quoteBlock',{
-      y:"40vh",
+      y:"50vh",
       x:"-100vw"
     })
 
+    gsap.timeline({
+      scrollTrigger:{
+        trigger:'.about-container',
+        toggleActions: "restart pause resume pause"
+      }
+    }).from('.text-layer',{
+      y:'15vh',
+      ease:'easeOut',
+    }).to('.text-layer',{
+      y:'0vh',
+      duration:15,
+      ease:'easeOut',
+    })
 
+    gsap.timeline({
+      repeat:-1,
+      scrollTrigger:{
+        trigger:".about-container"
+      }
+    }).to('.paraBlock:nth-child(1)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(1)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(2)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(2)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(3)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(3)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(4)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(4)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(6)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(6)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(7)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(7)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(8)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(8)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(9)',{
+      backgroundPositionX:'0%',
+      duration:3,
+      stagger:0.2
+    }).to('.paraBlock:nth-child(9)',{
+      backgroundPositionX:'100%',
+      duration:3,
+      stagger:0.2
+    })
   })
 
   return (
@@ -338,7 +421,17 @@ function App() {
     </div>
   </div>
   <div className='about-container'>
-
+    <div className='text-layer'>
+      <div className='paraBlock'>Send me a message</div>
+      <div className='paraBlock'>and maybe we end up talking about</div>
+      <div className='paraBlock'>emerging technology or web3,</div>
+      <div className='paraBlock'>conspicuous environmentalism or brewing coffee</div>
+      <div className='mailBlock'>anoyroyc3545@gmail.com</div>
+      <div className='paraBlock'>Which netflix series you love the most</div>
+      <div className='paraBlock'>game development ideas or spiritualism</div>
+      <div className='paraBlock'>your recent business ideas</div>
+      <div className='paraBlock'>or Lil Nas X's new song</div>
+    </div>
   </div>
   </div>
   );
