@@ -1,4 +1,4 @@
-import { useLayoutEffect} from 'react';
+import { useLayoutEffect, useRef} from 'react';
 import { gsap } from 'gsap';
 import './App.css';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -13,9 +13,41 @@ import image8 from './images/8.jpg'
 import image9 from './images/9.jpg'
 
 function App() {
-  
+  let posX1 = useRef(null)
+  let posY1 = useRef(null)
+  let mouseX1 = useRef(null)
+  let mouseY1 = useRef(null)
 
   useLayoutEffect(() => {
+    let tl = gsap.timeline();
+    let tl2 = gsap.timeline();
+    
+    let posX = posX1.current;
+    let posY = posY1.current;
+    let mouseX = mouseX1.current;
+    let mouseY = mouseY1.current;
+    tl.to({} , 0.016, {
+      repeat: -1,
+      onRepeat: function(){
+        posX += (mouseX - posX) / 10;
+        posY += (mouseY - posY) / 10;
+        tl.set('.cursor', {
+          css: {
+            left: posX ,
+            top: posY ,
+          },
+        });
+      }
+    })
+    document.addEventListener("mousemove", function(e){
+      mouseX = e.pageX;
+      mouseY = e.pageY + bodyScrollBar.scrollTop;
+    })
+    tl2.from('.cursor', {
+      duration: 1.5,
+      delay: 2,
+      opacity: 1
+    }, "-=1")
     gsap.registerPlugin(ScrollTrigger)
     //var timeScaleClamp = gsap.utils.clamp(4, 6);
 
@@ -303,7 +335,9 @@ function App() {
 
   return (
     <div className='contents'>
-    <div class="noise"></div>
+   
+    <div className="noise"></div>
+    
     <div className="gallery-container">
     <div className="gallery">
       <div className="gallery-layer">
