@@ -382,7 +382,13 @@ function App() {
       </div>
       <div className="gallery-layer">
         <div className="textBlock">
-        <h1>Anoy Roy <br/>Chowdhury</h1>
+          <h1>Anoy Roy <br/>Chowdhury</h1>
+        </div>
+      </div>
+      <div className='gallery-layer'>
+        <div className="textBlock">
+          <p>I am a programmer, artist and designer<br /> I learn whatever I find interesting and <br />
+          My pursuit for perfection continues...</p>
         </div>
       </div>
     </div>

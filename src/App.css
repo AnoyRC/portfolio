@@ -157,6 +157,18 @@ body {
   font-size: 9vw;
 }
 
+.gallery-layer:nth-child(10) .textBlock {
+  bottom: 7.5vw;
+  left: -35vw;
+  display: block;
+  position: absolute;
+}
+
+.gallery-layer:nth-child(10) .textBlock > p {
+  font-family: 'Cabinet';
+  font-size: 1.8vw;
+}
+
 
 .galleryBlock {
   display: block;
