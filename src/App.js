@@ -11,6 +11,7 @@ import image5 from './images/5.jpg'
 import image7 from './images/7.jpg'
 import image8 from './images/8.jpg'
 import image9 from './images/9.jpg'
+import image10 from './images/10.jpeg'
 
 function App() {
   let posX1 = useRef(null)
@@ -408,31 +409,70 @@ function App() {
   </div>
   <div className='skill-container'>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>Javascript</h1>
+          <p>Every app I develop, has a little bit <br /> of javascript in it.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>HTML/CSS</h1>
+          <p>I mainly use to develop basic<br /> website markup.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>React</h1>
+          <p>My favourite and most used <br /> frontend library.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>MongoDB</h1>
+          <p>I use this database for full stack<br /> website development.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>C++</h1>
+          <p>My first and best competitive<br /> coding language.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>Solana Blockchain</h1>
+          <p>I learnt to develop feasible and <br /> optimized smart contract.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>Express / Node</h1>
+          <p>I use it as a part of MERN stack <br /> backend development.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>Rust</h1>
+          <p>I learnt to develop smart contract <br /> for solana blockchain.</p>
+          <p>_</p>
+        </div>
     </div>
     <div className="skill-layer">
-        <div className="skillBlock"></div>
+        <div className="skillBlock">
+          <h1>Blender / Cinema4D</h1>
+          <p>Yes, I know 3D modelling and most <br />used softwares are these two.</p>
+          <p>_</p>
+        </div>
+    </div>
+    <div className='skill-layer'>
+      <img src={image10} alt='Skills' />
     </div>
   </div>
   <div className='project-greeting'>
@@ -444,7 +484,12 @@ function App() {
   </div>
   <div className='project-container'>
     <div className='project-layer'>
-      <div className='projectBlock'></div>
+      <div className='projectBlock'>
+        <h2> 1 </h2>
+        <h1>Live Data Feed DApp</h1>
+        <p>Live Data feed SOL/USD through Chainlink<br /> Language used : Javascript / Rust</p>
+        <a href='https://github.com/AnoyRC/data-feed-dapp'>Link</a>
+      </div>
       <div className='projectBlock'></div>
       <div className='projectBlock'></div>
       <div className='projectBlock'></div>
