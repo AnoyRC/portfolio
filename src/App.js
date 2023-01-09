@@ -192,8 +192,8 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*6.4,
-        end:window.innerHeight*9.4
+        start:window.innerHeight*6.5,
+        end:window.innerHeight*9.5
       }
     }).from('.quote-layer:nth-child(1) .quoteBlock',{
       y:"-50vh",
@@ -207,8 +207,8 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*6.4,
-        end:window.innerHeight*9.4
+        start:window.innerHeight*6.5,
+        end:window.innerHeight*9.5
       }
     }).from('.quote-layer:nth-child(2) .quoteBlock',{
       y:"50vh",
@@ -222,8 +222,8 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*6.4,
-        end:window.innerHeight*9.4
+        start:window.innerHeight*6.5,
+        end:window.innerHeight*9.5
       }
     }).from('.quote-layer:nth-child(3) .quoteBlock',{
       y:"50vh",
@@ -237,8 +237,8 @@ function App() {
       scrollTrigger:{
         trigger:'.quote-container',
         scrub:true,
-        start:window.innerHeight*6.4,
-        end:window.innerHeight*9.4
+        start:window.innerHeight*6.5,
+        end:window.innerHeight*9.5
       }
     }).from('.quote-layer:nth-child(4) .quoteBlock',{
       y:"-50vh",
@@ -486,18 +486,58 @@ function App() {
     <div className='project-layer'>
       <div className='projectBlock'>
         <h2> 1 </h2>
-        <h1>Live Data Feed DApp</h1>
+        <h1>Live Data Feed Dapp</h1>
         <p>Live Data feed SOL/USD through Chainlink<br /> Language used : Javascript / Rust</p>
         <a href='https://github.com/AnoyRC/data-feed-dapp'>Link</a>
       </div>
-      <div className='projectBlock'></div>
-      <div className='projectBlock'></div>
-      <div className='projectBlock'></div>
-      <div className='projectBlock'></div>
-      <div className='projectBlock'></div>
-      <div className='projectBlock'></div>
-      <div className='projectBlock'></div>
-      <div className='projectBlock'></div>
+      <div className='projectBlock'>
+        <h2> 2 </h2>
+        <h1>Blogger Dapp</h1>
+        <p>Web3 blogger made on top of Solana Blockchain<br /> Language used : Javascript / Rust</p>
+        <a href='https://github.com/AnoyRC/blogger-dapp'>Link</a>
+      </div>
+      <div className='projectBlock'>
+        <h2> 3 </h2>
+        <h1>Crowdfunding Dapp</h1>
+        <p>Web3 Crowdfunding like kickstarter made on top of< br/> Solana Blockchain<br /> Language used : Javascript / Rust</p>
+        <a href='https://github.com/AnoyRC/crowdfunding2.0-dapp'>Link</a>
+      </div>
+      <div className='projectBlock'>
+        <h2> 4 </h2>
+        <h1>GIPHY Dapp</h1>
+        <p>Web3 Clone of Giphy made on top of< br/> Solana Blockchain<br /> Language used : Javascript / Rust</p>
+        <a href='https://github.com/AnoyRC/giphy-project-dapp'>Link</a>
+      </div>
+      <div className='projectBlock'>
+        <h2> 5 </h2>
+        <h1>Reachable</h1>
+        <p>A full stack social media website < br/>made using MERN stack<br /> Language used : Javascript</p>
+        <a href='https://github.com/AnoyRC/Reachable'>Link</a>
+      </div>
+      <div className='projectBlock'>
+        <h2> 6 </h2>
+        <h1>NodeKB</h1>
+        <p>A full stack CRUD app < br/>made using Pug.js<br /> Language used : Javascript / Pug</p>
+        <a href='https://github.com/AnoyRC/nodekb'>Link</a>
+      </div>
+      <div className='projectBlock'>
+        <h2> 7 </h2>
+        <h1>Sign Language Detection</h1>
+        <p>Python project to detect sign langauge <br /> using your web camera<br /> Language used : Python</p>
+        <a href='https://github.com/AnoyRC/Sign-Detection-language'>Link</a>
+      </div>
+      <div className='projectBlock'>
+        <h2> 8 </h2>
+        <h1>Unity 3D games</h1>
+        <p>Made 3d games using Unity<br /> Game Engine<br /> Language used : C#</p>
+        <a href='https://isolation-media.itch.io/forgotten-lands'>Link</a>
+      </div>
+      <div className='projectBlock'>
+        <h2> 9 </h2>
+        <h1>2D vector art</h1>
+        <p>Projects made with ipad, posted on<br /> Instagram<br /> software used : Procreate</p>
+        <a href='https://www.instagram.com/anoyroychowdhury_/'>Link</a>
+      </div>
     </div>
     <div className='line-layer'>
       <div className='lineBlock'></div>
@@ -534,6 +574,9 @@ function App() {
     </div>
   </div>
   <div className='about-container'>
+    <div className='bg-layer'>
+      <div className='bgBlock'></div>
+    </div>
     <div className='text-layer'>
       <div className='paraBlock'>Send me a message</div>
       <div className='paraBlock'>and maybe we end up talking about</div>
